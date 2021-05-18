@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <!-- Torus Kit `.css` file -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <!-- Torus Kit `.js` file -->
+    <script src="./assets/js/toruskit.min.js"></script>
+
+    <title>Pro - Beautiful Responsive Bootstrap 5 HTML Template</title>
+
+</head>
+
+<body class="theme-dark bg-dark">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Navigation -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="./">
+                <img src="./assets/img/logo-w.svg" alt="Logo">
+            </a>
+
+            <!-- Togglers -->
+            <div class="d-flex ms-auto order-lg-1">
+                <!-- Top navigation toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-three-dots-vertical"></i>
+        </button>
+
+                <!-- Offscreen navigation toggler -->
+                <button class="btn shadow-no position-relative center-both text-white" id="off-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" data-tor="click:class.toggle(active, {target: body})">
+          <!-- <i class="bi bi-list h4 mb-0 z-index-1 center-both"></i> -->
+          <i class="bi bi-arrow-left-short position-absolute d-flex" data-tor="hover(#off-toggler):reveal(left) delay(100ms) quad"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-tor-group="path => hover(#off-toggler):scaleX.to(0) originX(0%) quad delay(/+100ms/);">
+            <path fill="currentColor" d="M2.5 4c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+            <path fill="currentColor" d="M2.5 8c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+            <path fill="currentColor" d="M2.5 12c0-.3.2-.5.5-.5h10c.3 0 .5.2.5.5s-.2.5-.5.5H3c-.3 0-.5-.2-.5-.5z" />
+          </svg>
+          <span class="circle circle-md position-absolute bg-opacity-10" data-tor="hover(#off-toggler):[bg(dark) scale.from(0)]"></span>
+        </button>
+            </div>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse small order-lg-0" id="topNavbar">
+                <ul class="navbar-nav d-flex w-100 justify-content-evenly px-2 px-lg-7 links-dark">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">(+234) 9066172677</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">luciusemuh@gmail.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Download CV
+              <i class="bi bi-file-earmark-arrow-down-fill text-primary"></i>
+            </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Let's chat
+              <i class="bi bi-chat-dots-fill text-primary"></i>
+            </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Offscreen backdrop -->
+    <div id="offscreen-backdrop" class="z-index-master w-h-100 fixed-top bg-black bg-opacity-50" data-tor="active(body):[fade.in @pointer-events(none;auto)] click:class.remove(active, {target: body})"></div>
+
+    <!-- Offscreen navigation -->
+    <nav id="offscreen-nav" class="overflow-auto position-fixed z-index-master end-0 bg-white shadow w-80 w-sm-auto p-5 pe-8 h-100" data-tor="active(body):pull.left(full)">
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-tor="click:class.remove(active, {target: body})" aria-label="Close"></button>
+        <ul class="nav flex-column links-dark nav-style-opacity nav-style-hover-primary" data-tor-group="
+      .nav-item => active(body):[fade.in pull.left(sm)] delay(/25ms+25ms/) slow;
+      .nav-link => hover:push.right(xs) quad;
+    ">
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#skills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#experience">Experience</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#portfolio">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#testimonials">Testimonials</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#work-process">Work Process</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#contact">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link transition-unset" href="#stay-connected">Stay connected</a>
+            </li>
+
+            <li class="nav-item">
+                <h6 class="text-primary font-sans-serif small text-uppercase opacity-50 mt-5 ms-3">Subpages</h6>
+                <ul class="nav flex-column">
+
+                    <li class="nav-item">
+                        <a class="nav-link transition-unset" href="./dark-services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link transition-unset" href="./dark-portfolio.html">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link transition-unset" href="./dark-contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link transition-unset" href="./dark-404.html">404</a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- HERO-->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <section id="home">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 center-v min-vh-100">
+
+                    <!-- left -->
+                    <div class="col my-3">
+                        <!-- Badge -->
+                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">About me</div>
+                        <!-- Title -->
+                        <h1 class="mb-5">
+                            <span data-tor="inview:reveal(up) bounce slow">Hi,</span>
+                            <br>
+                            <span data-tor="inview:reveal(up) bounce slow delay(.5s)">I'm</span>
+                            <span data-tor="inview:reveal(up) bounce slow delay(.6s)" class="text-primary">Benedict</span>
+                        </h1>
+                        <!-- Subtitle -->
+                        <h2 class="h3 font-sans-serif fw-normal text-body-light mb-3">Web Designer and Content Writer</h2>
+                        <!-- Description -->
+                        <p class="text-body-light w-80 mb-6">
+                            Hey, are looking for a designer and content writer to build your <span class="text-primary">Brand and grow your business?</span> Let's shake hands with me.
+                        </p>
+                        <!-- CTA -->
+                        <button class="btn btn-primary btn-arrow py-2 px-3 mb-4" data-tor="hover:[bg(transparent) text(primary)]">Hire me</button>
+                        <!-- Social icons -->
+                        <div class="social-icons">
+                            <a href="#" class="d-inline-block me-3">
+                                <img src="./assets/icons/messenger-w.svg" alt="icon" class="p-2">
+                            </a>
+                            <a href="#" class="d-inline-block me-3">
+                                <img src="./assets/icons/behance-w.svg" alt="icon" class="p-2">
+                            </a>
+                            <a href="#" class="d-inline-block">
+                                <img src="./assets/icons/instagram-w.svg" alt="icon" class="p-2">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end .col -->
+
+                    <!-- Right Illustration -->
+                    <div class="col">
+
+                        <img src="assets/img/bermuda-749.png" alt="" srcset="" width="500em">
+
+                    </div>
+                    <!-- end .col -->
+
+                </div>
+                <!-- end .row -->
+            </div>
+            <!-- .container -->
+        </section>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- SERVICES -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <section id="services" class="py-5 py-lg-8 bg-dark bg-darken-sm">
+            <div class="container py-4">
+                <!-- Title -->
+                <div class="title-badge d-inline-block mb-3 bg-primary text-primary bg-opacity-10 px-3 small">Services</div>
+
+                <div class="row row-cols-1 row-cols-md-2 mt-5 center-v">
+                    <!-- Illustration -->
+                    <div class="col my-3">
+                        <div class="pe-6">
+                            <img src="assets/img/eastwood-design.png" alt="" width="500em">
+                        </div>
+                    </div>
+                    <!-- end .col -->
+
+                    <!-- Description -->
+                    <div class="col">
+
+                        <h2 class="mb-4 overflow-hidden mb-5" data-tor-group=".fx => scroll:[@width(0;auto) @visibility(hidden;visible), {start: /10+5/, end: /10+5/}];">
+                            My clients know, that I always provide top-level Contents
+                            <span class="text-primary">
+
+                <span class="text-nowrap"><span class="fx">s</span><span class="fx">e</span><span class="fx">r</span><span class="fx">v</span><span class="fx">i</span><span class="fx">c</span><span class="fx">e</span>
+                            <span class="fx">s</span>
+                            </span>
+
+                            <span class="text-white text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
+                            </span>
+                        </h2>
+
+                        <p class="mb-6">I have a solid background in web design and content writing. Contact me to know more.</p>
+                        <div class="row row-cols-1 row-cols-md-2" data-tor-group=".circle => inview:[scale.from(0) rotate.from(20deg)] delay(/+50ms/) slow; h3 => inview:[pull.left(sm) fade.in] slow delay(/+50ms/);">
+
+
+
+                            <div class="col mb-5" data-tor-parent="hover">
+                                <a href="#" class="center-v">
+                                    <!-- Icon -->
+                                    <div class="circle p-4 bg-secondary me-3" data-tor="!hover(p):bg(primary)">
+                                        <i class="bi bi-globe text-white h3 mb-0"></i>
+                                    </div>
+                                    <!-- Heading -->
+                                    <h3 class="font-sans-serif h5 mb-0">Web design</h3>
+
+                                    <i class="bi bi-arrow-right ms-auto text-secondary" data-tor="hover(p):[fade.in pull.right(sm)]"></i>
+                                </a>
+                            </div>
+
+                            <div class="col mb-5" data-tor-parent="hover">
+                                <a href="#" class="center-v">
+                                    <!-- Icon -->
+                                    <div class="circle p-4 bg-secondary me-3" data-tor="!hover(p):bg(primary)">
+                                        <i class="bi bi-brush text-white h3 mb-0"></i>
+                                    </div>
+                                    <!-- Heading -->
+                                    <h3 class="font-sans-serif h5 mb-0">Content Writing</h3>
+
+                                    <i class="bi bi-arrow-right ms-auto text-secondary" data-tor="hover(p):[fade.in pull.right(sm)]"></i>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- end .col -->
+
+                </div>
+                <!-- end .row -->
+            </div>
+            <!-- end .container -->
+        </section>
+        <!-- end #services -->
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- SKILLS -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <section id="skills" class="py-5 mt-3 py-lg-8">
+            <div class="container">
+                <!-- Badge -->
+                <div class="title-badge d-inline-block mb-3 bg-primary text-primary bg-opacity-10 px-3 small">Skills</div>
+
+                <div class="row row-cols-1 row-cols-md-2 mt-md-5 center-v">
+                    <!-- - - - - - - - -  -->
+                    <!-- Description -->
+                    <!-- - - - - - - - -  -->
+                    <div class="col">
+                        <!-- Title -->
+
+                        <h2 class="mb-4 w-80 overflow-hidden mb-5" data-tor-group=".fx => scroll:[@width(0;auto) @visibility(hidden;visible), {start: /10+5/, end: /10+5/}];">
+                            As a designer I am constantly improving my
+                            <span class="text-primary">
+
+                <span class="text-nowrap"><span class="fx">s</span><span class="fx">k</span><span class="fx">i</span><span class="fx">l</span><span class="fx">l</span><span class="fx">s</span></span>
+
+                            <span class="text-white text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
+                            </span>
+                        </h2>
+
+                        <!-- Description -->
+                        <p class="mb-6">I follow current trends in website design and continously strive to improve my skills as a content writer.</p>
+
+                        <!-- Skill progress -->
+                        <div id="skill-progress">
+
+                            <div class="skill mb-5">
+                                <h3 class="h6 small font-sans-serif mb-3">App design</h3>
+                                <div class="progress rounded-pill bg-black bg-opacity-20">
+                                    <div class="progress-bar bg-secondary rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" data-tor="inview:@width(0%;75%) exponential slower">
+                                        <span class="ms-auto me-3">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-5">
+                                <h3 class="h6 small font-sans-serif mb-3">Web design</h3>
+                                <div class="progress rounded-pill bg-black bg-opacity-20">
+                                    <div class="progress-bar bg-secondary rounded-pill" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-tor="inview:@width(0%;95%) exponential slower">
+                                        <span class="ms-auto me-3">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- end .col -->
+
+                    <!-- - - - - - - - -  -->
+                    <!-- Illustration -->
+                    <!-- - - - - - - - -  -->
+                    <div class="col">
+                        <div class="px-4 ps-md-7 pe-md-0">
+                            <img src="assets/img/cherry-568.png" alt="" width="500em">
+                        </div>
+                    </div>
+                    <!-- end .col -->
+
+                </div>
+            </div>
+        </section>
+        <!-- end #skills -->
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- EXPERIENCE -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <section id="experience" class="py-5 py-lg-8 overflow-hidden bg-dark bg-darken-sm">
+            <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-2">
+
+                    <!-- My education -->
+                    <div class="col" data-tor-group="
+          .experience-box .date         => inview:reveal(up) delay(/+50ms/);
+          .experience-box .description  => inview:[pull.left(md) fade.in] delay(/+50ms/) wait(100ms) slow;
+        ">
+                        <!-- Badge -->
+                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Qualification</div>
+                        <!-- Title -->
+                        <h2 class="ms-md-6 mb-5">My Education</h2>
+
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date">2012 - 2017</small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-primary font-sans-serif">B.PT</h5>
+                                    <h4 class="font-sans-serif">Physiotherapy</h4>
+                                    <small class="text-secondary">University of Lagos</small>
+                                </div>
+                                <p class="small">Major in Physiotherapy.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date">2018-2018</small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-primary font-sans-serif">Advanced Diploma in Web Development</h5>
+                                    <h4 class="font-sans-serif">Web Development</h4>
+                                    <small class="text-secondary">New Horizon's Technology</small>
+                                </div>
+                                <p class="small">Major in FrontEnd and BackEnd Web Development</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end .col -->
+
+                    <!-- My education -->
+                    <div class="col" data-tor-group="
+          .experience-box .date         => inview:reveal(up) delay(/+50ms/);
+          .experience-box .description  => inview:[pull.left(md) fade.in] delay(/+50ms/) wait(100ms) slow;
+        ">
+                        <!-- Badge -->
+                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Experience</div>
+                        <!-- Title -->
+                        <h2 class="ms-6 mb-5">My Experience</h2>
+
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date">2018-2019</small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-blue font-sans-serif">Lagos University Teaching Hospital</h5>
+                                    <h4 class="font-sans-serif">Intern Physiotherapist</h4>
+                                    <small class="text-secondary">Lagos</small>
+                                </div>
+                                <p class="small">After finishing my studies, I first concentrated on my work in LUTH, here I worked as a Intern Physiotherapist.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience-box row mb-3">
+                            <div class="col-md-3 py-2 py-md-5">
+                                <small class="d-inline-block date">2020 - 2021</small>
+                            </div>
+                            <div class="description col-md-9 border-start py-md-5">
+                                <div class="mb-4">
+                                    <h5 class="text-magenta font-sans-serif">Ring Road State Hospital</h5>
+                                    <h4 class="font-sans-serif">Physiotherapist</h4>
+                                    <small class="text-secondary">Ibadan</small>
+                                </div>
+                                <p class="small">I did my National Youth Service Corps as a Physiotherapist here</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end .col -->
+
+                </div>
+                <!-- end .row -->
+            </div>
+            <!-- end .container -->
+        </section>
+        <!-- end #experience -->
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- PORTFOLIO -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <section id="portfolio" class="py-5 py-lg-8">
+            <div class="container py-4">
+                <!-- Title -->
+                <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Portfolio</div>
+
+                <div class="row row-cols-1 row-cols-md-2 mb-7">
+                    <div class="col">
+
+                        <h2 class="mb-4 overflow-hidden mb-5" data-tor-group=".fx => scroll:[@width(0;auto) @visibility(hidden;visible), {start: /10+5/, end: /10+5/}];">
+                            Some of my web design and content writing
+                            <span class="text-primary">
+
+                <span class="text-nowrap"><span class="fx">w</span><span class="fx">o</span><span class="fx">r</span><span class="fx">k</span><span class="fx">s</span></span>
+
+                            <span class="text-white text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
+                            </span>
+                        </h2>
+
+                        <p class="mb-6">As a content writer and designer I have been working few years in this sector, and I have completed lot's of projects.</p>
+                        <a href="#" class="btn-link btn-arrow">Explore more</a>
+                    </div>
+                    <div class="col">
+                        <div class="row row-cols-md-2 mt-4">
+                            <!-- col -->
+                            <div class="col center-v">
+                                <div class="display-5 font-sans-serif text-primary me-4">04</div>
+                                <h3 class="h5 mb-0 font-sans-serif w-md-30">Years of Experience</h3>
+                            </div>
+                            <!-- end .col -->
+                            <!-- col -->
+                            <div class="col center-v">
+                                <div class="display-5 font-sans-serif text-primary me-4">70+</div>
+                                <h3 class="h5 mb-0 font-sans-serif w-md-30">Completed Project</h3>
+                            </div>
+                            <!-- end .col -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tor-slider" data-tor-slider="count(1 md::2) margin(80) indicators(true) add-trigger(active) indicators-light" data-tor-group=".portfolio-item => active(p):[scale.from(80%) rotate.from(5deg)];">
+                    <a href="https://orangevfx.com/"><img class="img-fluid border border-dark border-opacity-5 portfolio-item bg-white" src="./assets/img/portfolio-1.png" alt="illustration"></a>
+                    <a href="https://mepfitperson.com/"><img class="img-fluid border border-dark border-opacity-5 portfolio-item bg-white" src="./assets/img/portfolio-2.png" alt="illustration"></a>
+                    <img class="img-fluid border border-dark border-opacity-5 portfolio-item bg-white" src="./assets/img/works/wfh_4.svg" alt="illustration">
+                    <img class="img-fluid border border-dark border-opacity-5 portfolio-item bg-white" src="./assets/img/works/wfh_5.svg" alt="illustration">
+                    <img class="img-fluid border border-dark border-opacity-5 portfolio-item bg-white" src="./assets/img/works/wfh_6.svg" alt="illustration">
+                </div>
+            </div>
+            <!-- end .container -->
+        </section>
+        <!-- end #portfolio -->
+
+
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- WEAPONS -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <section id="my-weapons" class="py-5 py-md-8 bg-dark bg-darken-sm">
+            <div class="container py-3">
+                <div class="row row-cols-1 row-cols-md-2 center-v">
+
+                    <div class="col-2">
+                        <!-- Badge -->
+                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Weapons</div>
+
+                        <h2 class="mb-4 overflow-hidden mb-5" data-tor-group=".fx => scroll:[@width(0;auto) @visibility(hidden;visible), {start: /10+4/, end: /10+4/}];">
+                            These are my all-time favorite
+                            <span class="text-primary">
+
+                <span class="text-nowrap"><span class="fx">e</span><span class="fx">v</span><span class="fx">e</span><span class="fx">r</span><span class="fx">y</span><span class="fx">d</span><span class="fx">a</span>
+                            <span class="fx">y</span><span class="fxd-inline"> </span><span class="fx">t</span><span class="fx">o</span><span class="fx">o</span><span class="fx">l</span><span class="fx">s</span></span>
+
+                            <span class="text-white text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
+                            </span>
+                        </h2>
+
+                        <p class="mb-6">I always loved those software that I use in my work, because I am very good at these, these are the main tools of my design career those are help me for make sure my Clients satisfaction.</p>
+                        <a href="#" class="btn-link btn-arrow">Let's see my work process</a>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="row pb-4">
+
+                            <div class="w-lg-25 p-4">
+                                <img src="assets/img/html.png" alt="" style="width: 7em;">
+                            </div>
+
+                            <div class="w-lg-25 p-4">
+                                <img src="assets/img/php.png" alt="" style="width: 7em;">
+                            </div>
+
+                            <div class="w-lg-25 p-4">
+                                <img src="assets/img/wordpress.png" alt="" style="width: 7em;">
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="w-lg-25 p-4">
+                                <img src="assets/img/css.png" alt="" style="width: 7em;">
+                            </div>
+
+                            <div class="w-lg-25 p-4">
+                                <img src="assets/img/js.png" alt="" style="width: 7em;">
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- end .container -->
+        </section>
+        <!-- end #my-weapons -->
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- WORK PROCESS -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <section id="work-process" class="py-5 py-md-8 border-bottom">
+            <div class="container py-4">
+
+                <div class="w-md-50">
+                    <!-- Badge -->
+                    <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Work process</div>
+
+                    <h2 class="mb-4 overflow-hidden mb-5" data-tor-group=".fx => scroll:[@width(0;auto) @visibility(hidden;visible), {start: /10+4/, end: /10+4/}];">
+                        Check some details about my
+                        <span class="text-primary">
+
+              <span class="text-nowrap"><span class="fx">w</span><span class="fx">o</span><span class="fx">r</span><span class="fx">k</span><span class="fxd-inline"> </span><span class="fx">p</span><span class="fx">r</span>
+                        <span class="fx">o</span><span class="fx">c</span><span class="fx">e</span><span class="fx">s</span><span class="fx">s</span></span>
+
+                        <span class="text-white text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
+                        </span>
+                    </h2>
+
+                    <p class="mb-6">Nullam quis nisl mauris. Praesent id urna ut dolor tincidunt semper. Nam orci leo, dapibus nec molestie a, viverra ut velit.</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3" data-tor-group=".fx => inview:[pull.up(md) fade.in] delay(/+100ms/) slow;">
+
+                    <div class="col">
+
+                        <div class="fx bg-primary rounded-xl p-6">
+                            <img class="w-20 mb-6" src="./assets/icons/coding.png" alt="icon">
+                            <h3 class="font-sans-serif text-white mb-4">Consulting</h3>
+                            <p class="mb-4 text-body-light">Vestibulum tellus ligula, pharetra nec enim vel, posuere ullamcorper nunc. Duis nec pellentesque lectus</p>
+                            <a href="#contact" class="btn btn-soft-light btn-arrow">Contact me</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="fx bg-secondary rounded-xl p-6">
+                            <img class="w-20 mb-6" src="./assets/icons/chat.png" alt="icon">
+                            <h3 class="font-sans-serif text-white mb-4">Idea creation</h3>
+                            <p class="mb-4 text-body-light">Vestibulum tellus ligula, pharetra nec enim vel, posuere ullamcorper nunc. Duis nec pellentesque lectus</p>
+                            <a href="#contact" class="btn btn-soft-light btn-arrow">Contact me</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="fx bg-warning bg-darken rounded-xl p-6">
+                            <img class="w-20 mb-6" src="./assets/icons/graph.png" alt="icon">
+                            <h3 class="font-sans-serif text-white mb-4">Applyig changes</h3>
+                            <p class="mb-4 text-body-light">Vestibulum tellus ligula, pharetra nec enim vel, posuere ullamcorper nunc. Duis nec pellentesque lectus</p>
+                            <a href="#contact" class="btn btn-soft-light btn-arrow">Contact me</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- end .container -->
+        </section>
+        <!-- end #work-process -->
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- CONTACT -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <section id="contact" class="py-5 py-md-8">
+            <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-2 center-v">
+
+                    <div class="col">
+                        <!-- Badge -->
+                        <div class="title-badge d-inline-block mb-6 bg-primary text-primary bg-opacity-10 px-3 small">Contact me</div>
+
+                        <h2 class="mb-7 overflow-hidden mb-5" data-tor-group=".fx => scroll:[@width(0;auto) @visibility(hidden;visible), {start: /10+5/, end: /10+5/}];">
+                            Let&#39;s talk together and calculate your project
+                            <span class="text-primary">
+
+                <span class="text-nowrap"><span class="fx">e</span><span class="fx">s</span><span class="fx">t</span><span class="fx">i</span><span class="fx">m</span><span class="fx">a</span><span class="fx">t</span>
+                            <span class="fx">e</span>
+                            </span>
+
+                            <span class="text-white text-opacity-30 ms-n1" data-tor="loop:blink">|</span>
+                            </span>
+                        </h2>
+
+                        <form class="w-md-80 form-clean inputs-transparent" data-tor-group=".form-control => !focus:[border(dark) bg(light)];">
+                            <div class="mb-2">
+                                <label for="contact-name" class="form-label opacity-70">Your name</label>
+                                <input type="text" class="form-control p-3 border-bottom" id="contact-name" aria-describedby="contact-name">
+                            </div>
+                            <div class="mb-2">
+                                <label for="contact-email" class="form-label opacity-70">Your email</label>
+                                <input type="email" class="form-control p-3 border-bottom" id="contact-email" aria-describedby="contact-email">
+                            </div>
+                            <div class="mb-2">
+                                <label for="contact-subject" class="form-label opacity-70">Subject</label>
+                                <input type="email" class="form-control p-3 border-bottom" id="contact-subject" aria-describedby="contact-subject">
+                            </div>
+                            <div class="mb-2">
+                                <label for="contact-message" class="form-label opacity-70">Message</label>
+                                <textarea class="form-control p-3 border-bottom" id="contact-message" rows="2"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-arrow py-2 px-3 float-md-end w-100 w-md-auto">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="col">
+                        <div class="px-md-7 d-none d-md-block">
+                            <img src="assets/img/marginalia-location-access.png" alt="" width="500em">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end .container -->
+        </section>
+        <!-- end #work-process -->
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- FOOTER -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <section id="stay-connected">
+            <div class="container position-relative pb-1 overflow-hidden overflow-sm-visible">
+                <div class="row">
+
+                    <div class="col-md-3 my-3">
+                        <div class="d-none d-md-block px-5">
+                            <svg version="1.1" id="illustration-footer" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 660.3 1260.5" xml:space="preserve">
+                <style>
+                  .st0 {
+                    fill: #404040
+                  }
+
+                </style>
+                <path class="st0" d="M176.9 1011.3V849.8L28.8 1259z" />
+                <path class="st0" d="M660.2 532.8H542.9c0-.2.1-.4.2-.8h13.6l-.2-.4H559.8l-17.5-30.1c-1.1-3.4-2.5-6.5-4.2-8.8l56.7-119.5c.5-1 .7-2 .7-3.1 0-4-3.2-7.2-7.2-7.2H382c-3.6-24.3-12.5-57.2-34.5-77.3-20.1-18.3-56.9-32.9-71.1-38 .4-.1.8-.3 1.2-.4 16.3 0 40.6-29 51.4-58-.1 2.1.2 4.2.7 6.3 2 7.1 8.4 12 15.8 12 1.5 0 3-.2 4.5-.6 7.2-2 11.3-9.5 9.3-16.7-1.7-6-7.9-9.5-13.9-7.8-5 1.4-7.9 6.6-6.5 11.6 1.2 4.2 5.6 6.6 9.8 5.4 1.1-.3 1.7-1.4 1.4-2.5-.3-1.1-1.4-1.7-2.5-1.4-2 .6-4.2-.6-4.8-2.7-.8-2.9.8-5.9 3.7-6.7 3.9-1.1 7.9 1.1 9 5 1.4 5.1-1.5 10.3-6.6 11.8-6.6 1.9-13.5-2-15.4-8.6-1.5-5-.4-10.4 2.9-14.5 36.6.6 37.4-25.5 36.4-29.9-1-4.6-6.2-9.7.5-25.1 6.7-15.4-.6-28.7-8.8-36.4-8.2-7.7-1-13.4-5.5-24.1-4.5-10.7-18.6-13.3-18.6-13.3s5.6-8.1 0-14.3c-2.3-2.5-6.2-3.7-10.1-4.3.3-.1.6-.3.8-.5 7.3-5.3 7.1-13.3 4.6-18.9-2.3-5.2-8.2-7.6-13.5-5.6-2 .8-3.7 2.4-4.5 4.5-.8 2.1-.8 4.5.2 6.6 1.6 3.6 5.8 5.3 9.5 3.9 1-.4 1.5-1.6 1.1-2.6-.4-1-1.6-1.5-2.6-1.1-1.7.6-3.6-.2-4.4-1.9-.5-1-.5-2.3-.1-3.4s1.2-1.9 2.3-2.3c3.3-1.2 7 .3 8.4 3.5 1 2 3.4 9.1-3.3 14-2.7 1.9-6 2.8-9.3 2.5-.3-4-2.9-20.1-25.5-28.5-26.1-9.7-44.3 11.7-44.3 11.7s-19.9-14.1-41-6.4c-13.9 5-15.4 17.4-15.4 17.4-4.4-.7-8.9-.7-13.2.2-3 .7-5.8 2.1-8.1 4.1-1.9 1.7-3.4 3.8-4.3 6.2-1.2 3.4-1.8 7-1.6 10.7-7.9 2.8-12.3-3.2-13.5-5.1-1.8-3-1-6.9 1.8-8.9.9-.6 2.1-.8 3.2-.6 1.2.3 2.2 1 2.8 2 1 1.6.6 3.6-.9 4.7-.9.6-1.1 1.9-.5 2.8.6.9 1.9 1.1 2.8.5 3.3-2.3 4.2-6.7 2.1-10.1-1.2-1.9-3.2-3.3-5.4-3.8s-4.5-.1-6.3 1.2c-4.6 3.2-5.9 9.4-3 14.2.6 1 1.4 2 2.2 2.9-7.1-.2-15.3 1.5-24.3 6.3-34 18.3-16 56.1-16 56.1s-20 4-25.1 24.3c-4.3 17.1 6.3 32.8 11.1 38.9-3.2 6.4-9.4 11.8-15.1 12.1-6.9.4-12.8-4.8-13.2-11.7-.3-5.3 3.7-9.8 9-10.1 4-.3 7.5 2.8 7.7 6.8.2 3-2.1 5.5-5.1 5.7-2.1.1-4-1.5-4.1-3.7 0-1.1-1-2-2.1-1.9-1.1 0-2 1-1.9 2.1.3 4.4 4 7.8 8.4 7.5 5.2-.3 9.2-4.7 8.9-9.9-.4-6.2-5.7-10.9-11.9-10.6-7.5.4-13.2 6.8-12.8 14.3.5 8.7 7.7 15.5 16.4 15.5h1c2.5-.2 5-.9 7.2-2.2-2.2 5.3-3.1 12.7.2 22.6 8.2 25.1 48.7 23 48.7 23 3.4 7.3 10.4 9.9 17.1 10.5-23.5 3.3-60.3 12.6-93.9 39.2C19.3 314.5.2 352.4.2 352.4s11 2.6 26.8 9.6c-1.5 4.2-41.5 122-21.3 151 5.7 8.2 32.7 13 67.3 15.8l-4.5 21.8s8.8 4.9 27.9 9.9c-3 5.5-25.1 48.5-47 129.6-12.5 46.2 1.4 81.8 25.6 104.7h-3.3c-15.2 0-27.5 12.3-27.5 27.5s12.3 27.5 27.5 27.5h262.1c-9.7 72.3-.7 186.6 5.7 242.7.2 1.6-.1 3-.7 4.2-.1-.1-.1-.2-.1-.3 0 0-7.4.7-15.5 3.1l-90.4-249.7v161.5L380.9 1259l-13.5-37.4c4.8-4.8 10.2-14.9 2.7-33.9-1.6-4.1-7.8-18.9-7.8-18.9 4.8-45.5 20-102.1 36.3-154-2.5 65.2 10.2 136.7 21.8 186.3l-6.1 13.6c-.1 0-.2.1-.4.1 0 0-22.8 44.5 6 44.6 12.3 0 108-.3 108-.3s3.7-22.8-27.8-27.1c-4.4-.6-14.4-2-14.4-2s.1.2.3.5c-.2-.1-.2-.2-.2-.2-21.7-21.4-33.7-36.8-28.1-77.5 4.2-29.3 54-244.1 63.5-295.3 5.7-30.8-.1-81.1-40.9-81.7 5.7-17.1 10.2-30.5 11.2-34.5 5.5-21 3.2-60.6-19.5-66.8 2.3.3 3.6.8 3.6.8-34.7-19.8-81.3-37.7-188.3-44.3-10.5-27.5-11.5-50.2-13.5-70.5 1.3-.5 2.5-.9 3.6-1.4h382.8v-26.3zm-119.1 0h-21.5c.1-.2.1-.5.2-.8h18.9c.9.4 1.7.7 2.4.8zm-245.2-.8H514.2l2.1.8H295.7c.1-.3.1-.5.2-.8z" />
+              </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 offset-md-1 center-both my-3">
+                        <div class="text-center" data-tor-group=".fx => inview:reveal(up) delay(/+100ms/);">
+                            <h2 class="fx mb-5">Stay Connected</h2>
+                            <p class="fx opacity-50 fw-500 mb-2">Lagos, Nigeria</p>
+                            <a href="mailto:#" class="fx text-light h3 font-sans-serif d-block mb-3">luciusemuh@gmail.com</a>
+                            <p class="fx">(+234) 9066172677</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end .row -->
+
+                <div class="position-absolute bottom-0 z-index-n1 w-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1363 74.1" class="w-100 overflow-visible" data-tor-group="path => mouseX:@parallax(/+3/);">
+            <path d="M0 73.9s85-29 117-29 86 25 111 27 323 5 354-13 58.6-58 106-58c39.5 0 74 19.9 94 36 26.5 21.4 90 30 122 26s338.5 11 338.5 11H0z" fill="#f8e9de" />
+            <path d="M208.1 74.1s81.9-27.9 127.1-30 84.1 11.3 123.1 15.4 76.9-29.8 112.9-33.9 92.3 9.2 134.4 24.6c42.1 15.4 96.4 34.9 142.6 13.3C894.3 42.1 916.8 0 1003 0s105.7 10.3 137.5 27.7 60.5 27.7 88.2 16.4c27.7-11.3 35.9-14.4 60.5 0s30.8 29.8 30.8 29.8l-1111.9.2z" fill="#f79682" />
+            <path d="M283 73.9s77-28 121-30 82 11 120 15 75-29 110-33 90 9 131 24 94 34 139 13 67-62 151-62 103 10 134 27 59 27 86 16 35-14 59 0 29 30 29 30H283z" fill="#77acd7" />
+          </svg>
+                </div>
+
+            </div>
+            <!-- end .container -->
+        </section>
+        <!-- end #footer -->
+    </main>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Scripts -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- Bootstrap `.js` file -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
